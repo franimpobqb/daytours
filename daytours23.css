@@ -1,0 +1,137 @@
+/* ---------------------------------
+ LANDING DAY TOURS */
+
+.asignar {
+    pointer-events: none;
+    display: inline-block;
+}
+
+#availableDayTours .bqb-card {
+    cursor: inherit;
+}
+
+#availableDayTours .bqb-card h5 {
+    color: #0077C4;
+    font-weight: bold;
+    font-size: 2.2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+#availableDayTours .div_row.turista {
+    display: flex;
+}
+
+#availableDayTours .div_row.turista .div_cell {
+    padding: 0;
+}
+
+#availableDayTours .det_daytour {
+    text-align: left;
+
+}
+
+#availableDayTours .precio {
+    font-size: 2.2rem;
+}
+
+#availableDayTours .tipoClases {
+    padding: 0;
+    margin-bottom: .5rem;
+}
+
+#availableDayTours .texClases {
+    padding: 0;
+}
+
+#availableDayTours .div_cell.det_daytour {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#availableDayTours .det_daytour_cta {
+    align-items: flex-end;
+}
+
+#availableDayTours .button-primary {
+    padding: 1.2rem 2rem;
+    width: auto;
+    max-width: 100%;
+}
+
+.dayTourNotAvailable {
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+/* FIN LANDING DAY TOURS 
+--------------------------------- */
+
+
+
+/* ---------------------------------
+INDIVIDUAL DAY TOURS */
+
+.bqb-card.daytour-detail-card {
+    cursor: inherit;
+}
+
+#header-day-tour-description {
+    color: #0077C4;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.daytour-detail-card .card-body {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.daytour-detail-card .imagen-banner {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.daytour-detail-card #header-day-tour-image-url {
+    height: 99%;
+    min-height: 350px;
+}
+
+#daytour-detail-price-number {
+    border: none;
+    padding: 0;
+    text-align: left;
+}
+
+.square-title-category-daytour {
+    font-weight: 700;
+    font-size: 15px;
+    color: #7b7b7b;
+    margin-bottom: .5rem;
+}
+
+#contFormDayt {
+    margin-top: 2rem;
+}
+
+.daytour-detail-cta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.daytour-detail-cta a {
+    display: inline-block;
+    margin-top: 2rem;
+    transition: all .2s ease;
+}
+
+.daytour-detail-cta a:hover {
+    opacity: .8;
+}
+
+/* FIN INDIVIDUAL DAY TOURS 
+--------------------------------- */

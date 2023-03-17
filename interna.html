@@ -24,69 +24,72 @@
     <link rel="stylesheet" href="https://www.buquebus.com/Portal/resources/Bqb/scss/purchase/_passenger.scss">
     <link rel="stylesheet" href="https://www.buquebus.com/Portal/resources/Bqb/scss/commons/_Bqb-style.scss">
     <link href="https://www.buquebus.com/Portal/resources/css/select2.min.css?v=1672842971868" rel="stylesheet" />
-    <link rel="stylesheet" href="cargapasajeros.css">
+   
 
     <style>
-        .asignar {
-            pointer-events: none;
-            display: inline-block;
-        }
-
-        #availableDayTours .bqb-card {
+        .bqb-card.daytour-detail-card {
             cursor: inherit;
         }
 
-        #availableDayTours .bqb-card h5 {
+        #header-day-tour-description {
             color: #0077C4;
             font-weight: bold;
-            font-size: 2.2rem;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
         }
 
-        #availableDayTours .div_row.turista {
-            display: flex;
+        .daytour-detail-card .card-body {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
         }
 
-        #availableDayTours .div_row.turista .div_cell {
+        .daytour-detail-card .imagen-banner {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .daytour-detail-card #header-day-tour-image-url {
+            height: 99%;
+            min-height: 350px;
+        }
+
+        #daytour-detail-price-number {
+            border: none;
             padding: 0;
-        }
-
-        #availableDayTours .det_daytour {
             text-align: left;
-
         }
 
-        #availableDayTours .precio {
-            font-size: 2.2rem;
-        }
-
-        #availableDayTours .tipoClases {
-            padding: 0;
+        .square-title-category-daytour {
+            font-weight: 700;
+            font-size: 15px;
+            color: #7b7b7b;
             margin-bottom: .5rem;
         }
 
-        #availableDayTours .texClases {
-            padding: 0;
+        #contFormDayt {
+            margin-top: 2rem;
         }
 
-        #availableDayTours .div_cell.det_daytour {
+        .daytour-detail-cta {
             display: flex;
-            flex-direction: column;
             justify-content: flex-end;
-        }
-
-        #availableDayTours .det_daytour_cta {
             align-items: flex-end;
         }
 
-        #availableDayTours .button-primary {
-            padding: 1.2rem 2rem;
-            width: auto;
-            max-width: 100%;
+        .daytour-detail-cta a {
+            display: inline-block;
+            margin-top: 2rem;
+            transition: all .2s ease;
         }
 
-        .dayTourNotAvailable {
-            font-style: italic;
-            font-size: 1.5rem;
+        .daytour-detail-cta a:hover {
+            opacity: .8;
+        }
+
+        .wrapper-daytour-text-info h5 {
+            font-weight: 700;
         }
     </style>
 </head>
@@ -94,62 +97,203 @@
 
 <body>
 
-    <div id="main" class="bqb-container">
-        <h1 id="header-day-tour-title">MEDIO DIA EN COLONIA</h1>
-        <h4 id="header-day-tour-subTitle">MEDIO DIA EN COLONIA</h4>
+    <div>
+        <section class="bqb-container promo-pack">
 
 
-        <div class="bqb-row">
-            <div class="bqb-col-12">
-                <div class="bqb-card">
-                    <div class="bqb-row">
-                        <div class="bqb-col-md-6 imagen-banner">
-                           
-                                <div id="header-day-tour-image-url" class="" style="background-image: url(https://www.buquebus.com/BqBResources/images/MEDIO_DIA-640x427-1657913935_0.webp);"><div id="loading-wrapper" class="bqb-loader-area-spinner-bg"><div class="bqb-loader-spinner bqb-loader-area-spinner"></div></div></div>
-                           
-                        </div>
-                        <div class="bqb-col-md-6">
-                            <div class="checkout-card payment-additionals">
-                                <div class="c">
-                                    <div class="bqb-row">
-                                    
-                                        <div class="bqb-col-md-8 bqb-col-12">
-                                            <div class="sub-titulo">
-                                                <h4 id="header-day-tour-description">Ida y vuelta en el día Buenos Aires - Colonia</h4>
-                                            </div>
-                                            <div id="div-day-tour-services-included">   
-                                <span class="wrapper-daytour-text-info">
-                                    <!-- TRADUCIBLE -->
-                                    <h5>DayTour Incluye</h5>
-                                    <p><br>
-                    - Pasajes de ida y vuelta en el dia.<br>
-                    - Llevá tu bicicleta sin cargo. <br>
-                    - Walking Tour por Barrio Histórico.<br>
-                    - Asistencia al viajero. Incluye cobertura de Salud (COVID19). <br>
-                    <br> *Precio comunicado en frecuencias y horarios seleccionados. <br></p>
-                                </span>	
-                            </div>	
-                                        </div>
-                                        <div id="daytour-detail-container-price" class="bqb-col-md-4 bqb-col-sm-12">
-                                            <div id="daytour-detail-price-number" class=""><div id="loading-wrapper" class="bqb-loader-area-spinner-bg"><div class="bqb-loader-spinner bqb-loader-area-spinner"></div></div>
-                                                   <div id="daytour-detail-price-number-block">
-                                <span class="square-title-form-daytour"></span> 
-                                <span class="square-title-currency-daytour precio">ARS</span> 
-                                <span class="square-title-price-daytour precio"> 13888</span>
-                                <div class="square-title-passenger-daytour">Precio</div>
+            <h1 id="header-day-tour-title">MEDIO DIA EN COLONIA</h1>
+            <h4 id="header-day-tour-subTitle">MEDIO DIA EN COLONIA</h4>
+
+            <!-- LOS CAMBIOS EMPIEZAN ACA-->
+            <div class="bqb-row">
+                <div class="bqb-col-12">
+                    <div class="bqb-card daytour-detail-card">
+                        <div class="bqb-row">
+                            <div class="bqb-col-md-6 imagen-banner">
+
+
+                                <!-- Imagen de fondo -->
+                                <div id="header-day-tour-image-url" class=""
+                                    style="background-image: url(https://www.buquebus.com/BqBResources/images/MEDIO_DIA-640x427-1657913935_0.webp);">
+                                    <div id="loading-wrapper" class="bqb-loader-area-spinner-bg">
+                                        <div class="bqb-loader-spinner bqb-loader-area-spinner"></div>
+                                    </div>
+                                </div>
+
                             </div>
-                                            </div> 
+                            <div class="bqb-col-md-6">
+                                <div class="card-body">
+                                    <div class="bqb-row">
+                                        <div class="bqb-col-12">
+                                            <div class="sub-titulo">
+
+                                                <!-- Tìtulo -->
+                                                <h4 id="header-day-tour-description">Ida y vuelta en el día Buenos Aires
+                                                    - Colonia</h4>
+                                            </div>
+
+
+                                            <div id="div-day-tour-services-included">
+                                                <span class="wrapper-daytour-text-info">
+
+                                                    <!-- Descripcion -->
+                                                    <h5>DayTour Incluye</h5>
+                                                    <p>
+                                                        - Pasajes de ida y vuelta en el dia.<br>
+                                                        - Llevá tu bicicleta sin cargo. <br>
+                                                        - Walking Tour por Barrio Histórico.<br>
+                                                        - Asistencia al viajero. Incluye cobertura de Salud (COVID19).
+                                                        <br>
+                                                        <br> *Precio comunicado en frecuencias y horarios seleccionados.
+                                                        <br></p>
+                                                </span>
+                                            </div>
+
+                                            <hr class="mt-5">
+                                            <br>
                                         </div>
-                                        
-                                    </div><!-- bqb-row -->
+
+                                        <!-- Se modificó la clase de este div -->
+                                        <div id="daytour-detail-container-price" class="bqb-col-9 bqb-col-md-6">
+
+                                            <div id="daytour-detail-price-number" class="">
+                                                <div id="loading-wrapper" class="bqb-loader-area-spinner-bg">
+                                                    <div class="bqb-loader-spinner bqb-loader-area-spinner"></div>
+                                                </div>
+                                                <div id="daytour-detail-price-number-block">
+                                                    <span class="square-title-form-daytour"></span>
+                                                    <span class="square-title-currency-daytour precio">ARS</span>
+                                                     <!-- Precio -->
+                                                    <span class="square-title-price-daytour precio"> 13888</span>
+
+                                                    <!-- Se agregó este Div -->
+                                                    <div class="square-title-category-daytour">
+                                                        Clase Turista
+                                                    </div>
+
+                                                    <div class="square-title-passenger-daytour">Por persona - Incluye
+                                                        impuesto PAIS</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Se agregó esta columna que incluye un svg que scrollea al form de abajo -->
+                                        <div class="bqb-col-md-6 bqb-col-3 daytour-detail-cta">
+                                            <a href="#contFormDayt">
+                                                <svg width="41" height="23" viewBox="0 0 41 23" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M0.840493 0.876383C1.37882 0.338216 2.10886 0.0358899 2.87005 0.0358899C3.63125 0.0358899 4.36129 0.338216 4.89961 0.876383L20.0941 16.0708L35.2885 0.876383C35.5533 0.602205 35.8701 0.383509 36.2203 0.23306C36.5705 0.0826116 36.9472 0.00342061 37.3284 0.000108384C37.7096 -0.00320384 38.0876 0.069431 38.4404 0.213771C38.7931 0.35811 39.1137 0.571266 39.3832 0.840801C39.6527 1.11034 39.8659 1.43085 40.0102 1.78364C40.1546 2.13644 40.2272 2.51445 40.2239 2.89561C40.2206 3.27678 40.1414 3.65347 39.9909 4.0037C39.8405 4.35393 39.6218 4.67069 39.3476 4.9355L22.1236 22.1595C21.5853 22.6977 20.8553 23 20.0941 23C19.3329 23 18.6028 22.6977 18.0645 22.1595L0.840493 4.9355C0.302326 4.39718 0 3.66714 0 2.90594C0 2.14475 0.302326 1.41471 0.840493 0.876383Z"
+                                                        fill="#0077C4" />
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
-                   
                 </div>
             </div>
-        </div>
+            <!-- LOS CAMBIOS TERMINAN ACA - SOLO HAY UNO MAS EN EL BOTON DE CONTINUAR LA CAJA DE ABAJO -->
+
+            <div class="bqb-row" id="contFormDayt">
+                <div class="bqb-col-12">
+                    <div class="checkout-card payment-additionals">
+                        <div class="bqb-row">
+                            <div class="bqb-col">
+                                <h2>Pasajeros y fecha</h2>
+                            </div>
+                        </div>
+                        <div class="bqb-row" id="combos_pax_promo">
+                            <div class="bqb-col-lg-4 bqb-col-12">
+                                <div class="bqb-form-group">
+                                    <label>Adultos</label>
+                                    <select class="bqb-select" id="sel-day-tour-adults-going" name="cantMayores">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="bqb-col-lg-4 bqb-col-12">
+                                <div class="bqb-form-group">
+                                    <label>Menores</label>
+                                    <select class="bqb-select" id="sel-day-tour-children-going" name="cantMenores">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="bqb-col-lg-4 bqb-col-12">
+                                <div class="bqb-form-group">
+                                    <label>Infantes</label>
+                                    <select class="bqb-select" id="sel-day-tour-infants-going" name="cantNinos">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bqb-row justify-content-between align-items-end" id="row_horarios_fp">
+                            <div class="bqb-col-lg-4 bqb-col-12">
+                                <div class="bqb-form-group">
+                                    <label>Ida</label>
+                                    <div class="bqb-form-control form-date cont_date"
+                                        id="txt-day-tour-departure-daytour">
+                                        <input type="text" class="bqb-form-control form-date" id="date_promo_dep">
+                                        <i class="bqb-icon-calendar-alt bqb-icon-margin-right" aria-hidden="true"></i>
+                                        <span id="span-departuredate">18/3/2023</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bqb-col-lg-4 bqb-col-12">
+                                <div class="bqb-form-group">
+                                    <label>Horarios ida</label>
+                                    <select class="bqb-select" id="sel-day-tour-departure">
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="bqb-col-lg-4 bqb-col-12">
+                                <div class="bqb-form-group">
+                                    <label>Horarios vuelta</label>
+                                    <select class="bqb-select" id="sel-day-tour-return">
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bqb-row justify-content-end">
+                            <div class="bqb-col-md-auto btn-recotizar-pack">
+
+                                <!-- Se cambió la clase del boton -->
+                                <button id="laf-btn-comprar" type="button" class="button-primary">
+                                    Continuar
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <script src="https://www.buquebus.com/Portal/resources/Bqb/js/bootstrap.bundle.min.js?version=1.10.13"></script>
     <script src="https://www.buquebus.com/Portal/resources/Bqb/js/daterangepicker.min.js?version=1.10.13"></script>
@@ -180,7 +324,6 @@
     <script src="https://www.buquebus.com/Portal/resources/js/summary/componentSummary.js?v=1672842971868"></script>
 
 
-    <script src="cargapasajeros.js" async defer></script>
 </body>
 
 </html>

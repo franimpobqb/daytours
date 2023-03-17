@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="https://www.buquebus.com/Portal/resources/Bqb/scss/purchase/_passenger.scss">
     <link rel="stylesheet" href="https://www.buquebus.com/Portal/resources/Bqb/scss/commons/_Bqb-style.scss">
     <link href="https://www.buquebus.com/Portal/resources/css/select2.min.css?v=1672842971868" rel="stylesheet" />
-    <link rel="stylesheet" href="cargapasajeros.css">
 
     <style>
         .asignar {
@@ -40,6 +39,8 @@
             color: #0077C4;
             font-weight: bold;
             font-size: 2.2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
         }
 
         #availableDayTours .div_row.turista {
@@ -52,7 +53,7 @@
 
         #availableDayTours .det_daytour {
             text-align: left;
-        
+
         }
 
         #availableDayTours .precio {
@@ -100,41 +101,64 @@
         </div>
 
         <div id="availableDayTours" class="celdas bqb-row">
+
+            <!-- LOS CAMBIOS EMPIEZAN ACA-->
             <div id="dayTourResultNUMEROID" class="m-b-20 bqb-col-lg-3 bqb-col-md-6 bqb-col-12">
                 <div class="bqb-card">
+
+                    <!-- Imagen de fondo -->
                     <div id="daytourBackgroundImageNUMEROID" class="card-img"
                         style="background-image: url(https://www.buquebus.com/resources_portal/BqbARG/banners/salidas_esp_mvd_1663269358.webp);">
                     </div>
+
                     <div class="card-body">
-                        <h5><span id="dayTourTitleNUMEROID" par="COL_SERV_BUE_COL">Medio día en Colonia</span></h5>
-                        <hr>
-                        <div class="horarios">
 
-                        </div>
-                        <p id="daytourDescription46"></p>
-                        <h6><b>DayTour Incluye:</b></h6>
-                        - Pasajes de ida y vuelta en el dia.<br>
-                        - Llevá tu bicicleta sin cargo. <br>
-                        - Walking Tour por Barrio Histórico.<br>
-                        - Asistencia al viajero. Incluye cobertura de Salud (COVID19). <br>
-                        <br> *Precio comunicado en frecuencias y horarios seleccionados. <br>
+                        <!-- Titulo -->
+                        <h5>
+                            <!-- Le saque un style que lo hacia color rojo -->
+                            <span id="dayTourTitleNUMEROID" style="/*color:#f94278;*/" par="COL_SERV_BUE_COL">Medio día
+                                en Colonia</span>
+                        </h5>
 
+                         <!-- Descripción -->
+                        <p id="daytourDescriptionNUMEROID">
+                            <b>Salidas: 18/03/2023 - 19/03/2023 - 21/03/2023 - 22/03/2023 y 25/03/2023*</b><br>
+                            <h6><b>DayTour Incluye:</b></h6>
+                            - Pasajes de ida y vuelta en el dia.<br>
+                            - Llevá tu bicicleta sin cargo. <br>
+                            - Walking Tour por Barrio Histórico.<br>
+                            - Asistencia al viajero. Incluye cobertura de Salud (COVID19). <br>
+                            <br> *Precio comunicado en frecuencias y horarios seleccionados. <br>
+                        </p>
+
+                        <!-- Se agregó este <hr> -->
                         <hr>
+
                         <div class="prec_dt div_table">
                             <div class="div_row turista" *style="position:relative" *="">
-                                <div id="errorSugNUMEEROID"
+                                <div id="errorSugNUMEROID"
                                     style="background: #fff;/*position: absolute*/;height: 100%;width: 100%;z-index: 1;padding-top: 3rem;display:none;padding-bottom: 3rem;">
                                     No hay daytours disponibles para la fechas solicitadas</div>
+
+
                                 <div class="div_cell det_daytour" id="details_daytourNUMEROID">
+                                    
+                                     <!-- Precio -->
                                     <div id="daytourPrecioNUMEROID" class="precio" style="margin-top:10px;">
                                         ARS&nbsp;13888
                                     </div>
                                     <div class="tipoClases">Clase Turista</div>
-                                    <div class="texClases">Incluye impuesto PAIS</div>
+
+                                    <!-- Se sacó este min-height -->
+                                    <div class="texClases" style="/* min-height: 38px; */">Incluye impuesto PAIS</div>
+
                                 </div>
                                 <div class="div_cell det_daytour det_daytour_cta" id="continue_daytourNUMEROID">
                                     <a href="interna.html">
-                                        <div id="daytourContinueNUMEROID" class="button-primary"><span>VER MÁS</span></div>
+
+                                        <!-- A este button se le cambió la clase y el texto paso de Continuar a VER MÀS -->
+                                        <div id="daytourContinueNUMEROID" class="button-primary"><span>VER MÁS</span>
+                                        </div>
                                     </a>
                                 </div>
                             </div>
@@ -142,6 +166,8 @@
                     </div>
                 </div>
             </div>
+            <!-- LOS CAMBIOS TERMINAN ACA-->
+
             <div id="dayTourResultNUMEROID" class="m-b-20 bqb-col-lg-3 bqb-col-md-6 bqb-col-12">
                 <div class="bqb-card">
                     <div id="daytourBackgroundImageNUMEROID" class="card-img"
@@ -149,21 +175,19 @@
                     </div>
                     <div class="card-body">
                         <h5><span id="dayTourTitleNUMEROID" par="COL_SERV_BUE_COL">Medio día en Colonia</span></h5>
-                        <hr>
-                        <div class="horarios">
 
-                        </div>
-                        <p id="daytourDescription46"></p>
-                        <h6><b>DayTour Incluye:</b></h6>
-                        - Pasajes de ida y vuelta en el dia.<br>
-                        - Llevá tu bicicleta sin cargo. <br>
-                        - Walking Tour por Barrio Histórico.<br>
-                        - Asistencia al viajero. Incluye cobertura de Salud (COVID19). <br>
-                        <br> *Precio comunicado en frecuencias y horarios seleccionados. <br>
 
+                        <p id="daytourDescriptionNUMEROID">
+                            <h6><b>DayTour Incluye:</b></h6>
+                            - Pasajes de ida y vuelta en el dia.<br>
+                            - Llevá tu bicicleta sin cargo. <br>
+                            - Walking Tour por Barrio Histórico.<br>
+                            - Asistencia al viajero. Incluye cobertura de Salud (COVID19). <br>
+                            <br> *Precio comunicado en frecuencias y horarios seleccionados. <br>
+                        </p>
                         <hr>
                         <div class="prec_dt div_table">
-                            <div class="div_row turista" *style="position:relative" *="">
+                            <div class="div_row turista">
                                 <div id="errorSugNUMEEROID" class="dayTourNotAvailable"
                                     style="background: #fff;/*position: absolute*/;height: 100%;width: 100%;z-index: 1;padding-top: 1rem;padding-bottom: 1rem;">
                                     No hay daytours disponibles para la fechas solicitadas</div>
@@ -214,8 +238,6 @@
 
     <script src="https://www.buquebus.com/Portal/resources/js/summary/componentSummary.js?v=1672842971868"></script>
 
-
-    <script src="cargapasajeros.js" async defer></script>
 </body>
 
 </html>
