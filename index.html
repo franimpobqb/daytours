@@ -25,71 +25,7 @@
     <link rel="stylesheet" href="https://www.buquebus.com/Portal/resources/Bqb/scss/commons/_Bqb-style.scss">
     <link href="https://www.buquebus.com/Portal/resources/css/select2.min.css?v=1672842971868" rel="stylesheet" />
 
-    <style>
-        .asignar {
-            pointer-events: none;
-            display: inline-block;
-        }
-
-        #availableDayTours .bqb-card {
-            cursor: inherit;
-        }
-
-        #availableDayTours .bqb-card h5 {
-            color: #0077C4;
-            font-weight: bold;
-            font-size: 2.2rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid rgba(0, 0, 0, .1);
-        }
-
-        #availableDayTours .div_row.turista {
-            display: flex;
-        }
-
-        #availableDayTours .div_row.turista .div_cell {
-            padding: 0;
-        }
-
-        #availableDayTours .det_daytour {
-            text-align: left;
-
-        }
-
-        #availableDayTours .precio {
-            font-size: 2.2rem;
-        }
-
-        #availableDayTours .tipoClases {
-            padding: 0;
-            margin-bottom: .5rem;
-        }
-
-        #availableDayTours .texClases {
-            padding: 0;
-        }
-
-        #availableDayTours .div_cell.det_daytour {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-        }
-
-        #availableDayTours .det_daytour_cta {
-            align-items: flex-end;
-        }
-
-        #availableDayTours .button-primary {
-            padding: 1.2rem 2rem;
-            width: auto;
-            max-width: 100%;
-        }
-
-        .dayTourNotAvailable {
-            font-style: italic;
-            font-size: 1.5rem;
-        }
-    </style>
+   <link rel="stylesheet" href="daytours23.css">
 </head>
 <br>
 
@@ -116,7 +52,7 @@
                         <!-- Titulo -->
                         <h5>
                             <!-- Le saque un style que lo hacia color rojo -->
-                            <span id="dayTourTitleNUMEROID" style="/*color:#f94278;*/" par="COL_SERV_BUE_COL">Medio día
+                            <span id="dayTourTitleNUMEROID" style="position: relative;/*color:#f94278;*/" par="COL_SERV_BUE_COL">Medio día
                                 en Colonia</span>
                         </h5>
 
@@ -142,7 +78,7 @@
 
 
                                 <div class="div_cell det_daytour" id="details_daytourNUMEROID">
-                                    
+
                                      <!-- Precio -->
                                     <div id="daytourPrecioNUMEROID" class="precio" style="margin-top:10px;">
                                         ARS&nbsp;13888
@@ -150,7 +86,7 @@
                                     <div class="tipoClases">Clase Turista</div>
 
                                     <!-- Se sacó este min-height -->
-                                    <div class="texClases" style="/* min-height: 38px; */">Incluye impuesto PAIS</div>
+                                    <div class="texClases" style="position: relative; /* min-height: 38px; */">Incluye impuesto PAIS</div>
 
                                 </div>
                                 <div class="div_cell det_daytour det_daytour_cta" id="continue_daytourNUMEROID">

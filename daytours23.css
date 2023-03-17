@@ -1,7 +1,7 @@
 /* ---------------------------------
  LANDING DAY TOURS */
 
-.asignar {
+ .asignar {
     pointer-events: none;
     display: inline-block;
 }
@@ -71,8 +71,7 @@
 
 
 /* ---------------------------------
-INDIVIDUAL DAY TOURS */
-
+INDIVIDUAL DAY TOUR */
 .bqb-card.daytour-detail-card {
     cursor: inherit;
 }
@@ -81,6 +80,7 @@ INDIVIDUAL DAY TOURS */
     color: #0077C4;
     font-weight: bold;
     font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .daytour-detail-card .card-body {
@@ -133,5 +133,8 @@ INDIVIDUAL DAY TOURS */
     opacity: .8;
 }
 
-/* FIN INDIVIDUAL DAY TOURS 
+.wrapper-daytour-text-info h5 {
+    font-weight: 700;
+}
+/* FIN INDIVIDUAL DAY TOUR
 --------------------------------- */
