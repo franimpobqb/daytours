@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Escapadas en el día a Colonia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet'>
+    <link href="https://www.buquebus.com/Portal/resources/Bqb/css/portal-core.css?v=1.10.13" rel="stylesheet" />
+    <link href="https://www.buquebus.com/Portal/resources/css/lib/calendar/daterangepicker.min.css?v=1.10.13"
+        rel="stylesheet" />
+    <script src="https://www.buquebus.com/Portal/resources/js/lib/jQuery/jquery-3.5.0.min.js?version=1.10.13"></script>
+    <link href="https://www.buquebus.com/resources_portal/Bqb/resources/css/styles_bqb.css?v=1.10.13"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://www.buquebus.com/Portal/resources/Bqb/scss/purchase/_passenger.scss">
+    <link rel="stylesheet" href="https://www.buquebus.com/Portal/resources/Bqb/scss/commons/_Bqb-style.scss">
+    <link href="https://www.buquebus.com/Portal/resources/css/select2.min.css?v=1672842971868" rel="stylesheet" />
+    <link rel="stylesheet" href="cargapasajeros.css">
+
+    <style>
+        .asignar {
+            pointer-events: none;
+            display: inline-block;
+        }
+
+        #availableDayTours .bqb-card {
+            cursor: inherit;
+        }
+
+        #availableDayTours .bqb-card h5 {
+            color: #0077C4;
+            font-weight: bold;
+            font-size: 2.2rem;
+        }
+
+        #availableDayTours .div_row.turista {
+            display: flex;
+        }
+
+        #availableDayTours .div_row.turista .div_cell {
+            padding: 0;
+        }
+
+        #availableDayTours .det_daytour {
+            text-align: left;
+
+        }
+
+        #availableDayTours .precio {
+            font-size: 2.2rem;
+        }
+
+        #availableDayTours .tipoClases {
+            padding: 0;
+            margin-bottom: .5rem;
+        }
+
+        #availableDayTours .texClases {
+            padding: 0;
+        }
+
+        #availableDayTours .div_cell.det_daytour {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        #availableDayTours .det_daytour_cta {
+            align-items: flex-end;
+        }
+
+        #availableDayTours .button-primary {
+            padding: 1.2rem 2rem;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .dayTourNotAvailable {
+            font-style: italic;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<br>
+
+<body>
+
+    <div id="main" class="bqb-container">
+        <h1 id="header-day-tour-title">MEDIO DIA EN COLONIA</h1>
+        <h4 id="header-day-tour-subTitle">MEDIO DIA EN COLONIA</h4>
+
+
+        <div class="bqb-row">
+            <div class="bqb-col-12">
+                <div class="bqb-card">
+                    <div class="bqb-row">
+                        <div class="bqb-col-md-6 imagen-banner">
+                           
+                                <div id="header-day-tour-image-url" class="" style="background-image: url(https://www.buquebus.com/BqBResources/images/MEDIO_DIA-640x427-1657913935_0.webp);"><div id="loading-wrapper" class="bqb-loader-area-spinner-bg"><div class="bqb-loader-spinner bqb-loader-area-spinner"></div></div></div>
+                           
+                        </div>
+                        <div class="bqb-col-md-6">
+                            <div class="checkout-card payment-additionals">
+                                <div class="c">
+                                    <div class="bqb-row">
+                                    
+                                        <div class="bqb-col-md-8 bqb-col-12">
+                                            <div class="sub-titulo">
+                                                <h4 id="header-day-tour-description">Ida y vuelta en el día Buenos Aires - Colonia</h4>
+                                            </div>
+                                            <div id="div-day-tour-services-included">   
+                                <span class="wrapper-daytour-text-info">
+                                    <!-- TRADUCIBLE -->
+                                    <h5>DayTour Incluye</h5>
+                                    <p><br>
+                    - Pasajes de ida y vuelta en el dia.<br>
+                    - Llevá tu bicicleta sin cargo. <br>
+                    - Walking Tour por Barrio Histórico.<br>
+                    - Asistencia al viajero. Incluye cobertura de Salud (COVID19). <br>
+                    <br> *Precio comunicado en frecuencias y horarios seleccionados. <br></p>
+                                </span>	
+                            </div>	
+                                        </div>
+                                        <div id="daytour-detail-container-price" class="bqb-col-md-4 bqb-col-sm-12">
+                                            <div id="daytour-detail-price-number" class=""><div id="loading-wrapper" class="bqb-loader-area-spinner-bg"><div class="bqb-loader-spinner bqb-loader-area-spinner"></div></div>
+                                                   <div id="daytour-detail-price-number-block">
+                                <span class="square-title-form-daytour"></span> 
+                                <span class="square-title-currency-daytour precio">ARS</span> 
+                                <span class="square-title-price-daytour precio"> 13888</span>
+                                <div class="square-title-passenger-daytour">Precio</div>
+                            </div>
+                                            </div> 
+                                        </div>
+                                        
+                                    </div><!-- bqb-row -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.buquebus.com/Portal/resources/Bqb/js/bootstrap.bundle.min.js?version=1.10.13"></script>
+    <script src="https://www.buquebus.com/Portal/resources/Bqb/js/daterangepicker.min.js?version=1.10.13"></script>
+    <script src="https://www.buquebus.com/Portal/resources/js/purchase/componentRememberPassword.js?version=1.10.13">
+    </script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/commons/componentLogin.js?v=1672842969869"></script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/home/componentNewsletter.js?v=1672842969869"></script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/pages/componentPage.js?v=1672842969869"></script>
+
+
+
+    <script src="https://www.buquebus.com/Portal/resources/js/elemental-page/listElement.js?v=1672842969869"></script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/lib/owl.carousel.min.js?v=1672842969869"></script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/commons/select2.min.js?v=1672842971868"></script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/purchase/Bqb/componentPassengerUI.js?v=1672842971868">
+    </script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/purchase/componentPassenger.js?v=1672842971868"></script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/home/componentNewsletter.js?v=1672842971868"></script>
+
+    <script src="https://www.buquebus.com/Portal/resources/js/summary/componentSummary.js?v=1672842971868"></script>
+
+
+    <script src="cargapasajeros.js" async defer></script>
+</body>
+
+</html>
